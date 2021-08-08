@@ -1,2 +1,2 @@
-# account-fees
-Script to calculate Unlocked.Me account fees on international transactions.
+# Finance Utilties
+Collection of helper scripts for common financial tasks.
