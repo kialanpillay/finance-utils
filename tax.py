@@ -28,8 +28,8 @@ annual_pension_contribution = annual_gross_salary * monthly_pension_contribution
 travel_allowance = 0
 uif = min(monthly(annual_gross_salary * 0.01), 148.72)
 
-for i in range(1,15):
-    monthly_pension_contribution_percentage = i * 0.01
+for i in range(5,20):
+    monthly_pension_contribution_percentage = i * 0.005
     annual_pension_contribution = annual_gross_salary * monthly_pension_contribution_percentage
     
     taxable_income = annual_gross_salary - tax_deductible(annual_pension_contribution , annual_gross_salary) - 0.2 * travel_allowance
