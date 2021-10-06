@@ -28,7 +28,7 @@ annual_pension_contribution = annual_gross_salary * monthly_pension_contribution
 travel_allowance = 0
 uif = min(monthly(annual_gross_salary * 0.01), 148.72)
 
-for i in range(5,20):
+for i in range(0,20):
     monthly_pension_contribution_percentage = i * 0.005
     annual_pension_contribution = annual_gross_salary * monthly_pension_contribution_percentage
     
@@ -39,6 +39,7 @@ for i in range(5,20):
     take_home_pay = monthly(annual_gross_salary) - paye - uif - monthly(annual_pension_contribution)
     print("Monthly pension contribution percentage: " + "{:,.2f}%". format(monthly_pension_contribution_percentage * 100))
     print("Taxable income for the year: " + "R{:,.2f}". format(taxable_income))
+    print("Annual pension contribution: " + "R{:,.2f}". format(annual_pension_contribution))
     print("Monthly pension contribution: " + "R{:,.2f}". format(monthly(annual_pension_contribution)))
     print("PAYE: " + "R{:,.2f}". format(paye))
     print("Take home pay: " + "R{:,.2f}". format(take_home_pay))
